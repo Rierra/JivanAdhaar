@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jeevan Adhaar - A non-governmental organization dedicated to community welfare, healthcare, and rural development across India.">
+    <meta name="keywords" content="NGO, Jeevan Adhaar, community welfare, healthcare, rural development, India">
+    <title>Jeevan Adhaar | जीवन आधार - Community Welfare Organization</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Government-style Bar -->
+    <div class="gov-bar">
+        <div class="container gov-bar-inner">
+            <div class="gov-text">
+                <span class="hindi-text">भारत में पंजीकृत</span>
+                <span class="divider">|</span>
+                <span>Registered in India</span>
+            </div>
+            <div class="accessibility-controls">
+                <button id="font-decrease" title="Decrease font size" aria-label="Decrease font size">A-</button>
+                <button id="font-reset" title="Reset font size" aria-label="Reset font size">A</button>
+                <button id="font-increase" title="Increase font size" aria-label="Increase font size">A+</button>
+                <button id="dark-mode-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <div class="logo-section">
+                <a href="index.html" class="logo-link">
+                    <div class="emblem">
+                        <div class="emblem-circle">
+                            <span>JA</span>
+                        </div>
+                    </div>
+                    <div class="org-name">
+                        <h1 class="hindi-title">जीवन आधार</h1>
+                        <h2 class="english-title">Jeevan Adhaar</h2>
+                        <p class="tagline">Foundation for Community Welfare</p>
+                    </div>
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel" id="home">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&h=450&fit=crop"
+                        alt="Community health camp in rural India">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>Healthcare for All</h3>
+                            <p>Bringing quality medical services to underserved communities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=450&fit=crop"
+                        alt="Education initiative for children">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>Education First</h3>
+                            <p>Empowering the next generation through learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&h=450&fit=crop"
+                        alt="Volunteers distributing supplies">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>Community Support</h3>
+                            <p>Standing together in times of need</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&h=450&fit=crop"
+                        alt="Women empowerment program">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>Women Empowerment</h3>
+                            <p>Building self-reliance through skill development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous slide">&lt;</button>
+            <button class="carousel-btn next" id="carousel-next" aria-label="Next slide">&gt;</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- News Ticker -->
+    <div class="news-ticker">
+        <div class="ticker-label">Latest Updates</div>
+        <div class="ticker-wrapper">
+            <div class="ticker-content" id="ticker-content">
+                <span class="ticker-item">Free Eye Screening Camp conducted in Varanasi - Over 500 beneficiaries
+                    examined</span>
+                <span class="ticker-separator">|</span>
+                <span class="ticker-item">Youth Volunteer Registration for 2026-27 now open - Apply before March
+                    31</span>
+                <span class="ticker-separator">|</span>
+                <span class="ticker-item">MoU signed with UP State Health Mission for rural healthcare expansion</span>
+                <span class="ticker-separator">|</span>
+                <span class="ticker-item">Jeevan Adhaar awarded 'Best NGO in Healthcare' by District Magistrate,
+                    Lucknow</span>
+                <span class="ticker-separator">|</span>
+                <span class="ticker-item">New Training Center inaugurated in Jhansi by Hon'ble MLA</span>
+                <span class="ticker-separator">|</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Quick Stats Bar -->
+        <section class="stats-bar">
+            <div class="container">
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-num">50,000+</span>
+                        <span class="stat-text">Beneficiaries</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">8</span>
+                        <span class="stat-text">States</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">120+</span>
+                        <span class="stat-text">Villages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">500+</span>
+                        <span class="stat-text">Volunteers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">85+</span>
+                        <span class="stat-text">Health Camps</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">Rs. 2.5 Cr</span>
+                        <span class="stat-text">Funds Utilized</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Compact) -->
+        <section class="about-section compact" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Welcome to Jeevan Adhaar</h2>
+                        <p>Jeevan Adhaar is a registered non-governmental organization committed to improving the
+                            quality of life for marginalized communities across India. Established in 2018, we work at
+                            the grassroots level to address critical challenges in healthcare, education, and
+                            livelihood.</p>
+                        <p>Our programs reach over 50,000 beneficiaries annually across 8 states, with a focus on
+                            sustainable development, community participation, and partnerships with government bodies.
+                        </p>
+                        <div class="about-buttons">
+                            <a href="about.html" class="btn-primary">Learn More</a>
+                            <a href="donate.html" class="btn-outline">Donate Now</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=500&h=350&fit=crop"
+                            alt="Team at work">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Map Section -->
+        <section class="impact-map-section" id="impact">
+            <div class="container">
+                <div class="section-header compact">
+                    <h2>Our Reach Across India</h2>
+                    <div class="header-underline"></div>
+                </div>
+                <div class="map-container">
+                    <div class="india-map">
+                        <svg viewBox="0 0 600 700" class="india-svg">
+                            <!-- Simplified India map outline -->
+                            <path class="map-outline"
+                                d="M280,50 L320,45 L380,60 L420,80 L450,120 L480,150 L500,200 L510,250 L520,300 L530,350 L520,400 L500,450 L480,500 L450,550 L400,600 L350,640 L300,660 L250,650 L200,620 L150,580 L120,530 L100,480 L90,420 L85,360 L90,300 L100,250 L120,200 L150,150 L200,100 L250,70 Z" />
+
+                            <!-- State markers with pulse animation -->
+                            <g class="map-markers">
+                                <!-- Uttar Pradesh (HQ) -->
+                                <circle cx="320" cy="280" r="12" class="marker-hq">
+                                    <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite" />
+                                </circle>
+                                <text x="320" y="260" class="marker-label">Lucknow (HQ)</text>
+
+                                <!-- Bihar -->
+                                <circle cx="400" cy="300" r="8" class="marker-active" />
+                                <text x="400" y="285" class="marker-label">Bihar</text>
+
+                                <!-- Madhya Pradesh -->
+                                <circle cx="280" cy="350" r="8" class="marker-active" />
+                                <text x="280" y="335" class="marker-label">MP</text>
+
+                                <!-- Rajasthan -->
+                                <circle cx="200" cy="280" r="8" class="marker-active" />
+                                <text x="200" y="265" class="marker-label">Rajasthan</text>
+
+                                <!-- Maharashtra -->
+                                <circle cx="240" cy="430" r="8" class="marker-active" />
+                                <text x="240" y="415" class="marker-label">Maharashtra</text>
+
+                                <!-- Jharkhand -->
+                                <circle cx="420" cy="340" r="8" class="marker-active" />
+                                <text x="420" y="325" class="marker-label">Jharkhand</text>
+
+                                <!-- Chhattisgarh -->
+                                <circle cx="350" cy="400" r="8" class="marker-active" />
+                                <text x="350" y="385" class="marker-label">Chhattisgarh</text>
+
+                                <!-- Uttarakhand -->
+                                <circle cx="290" cy="200" r="8" class="marker-active" />
+                                <text x="290" y="185" class="marker-label">Uttarakhand</text>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="map-stats">
+                        <h3>Active Operations</h3>
+                        <div class="map-stat-list">
+                            <div class="map-stat-item">
+                                <span class="state-name">Uttar Pradesh (HQ)</span>
+                                <span class="state-data">42 villages, 18,500 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Bihar</span>
+                                <span class="state-data">22 villages, 8,200 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Madhya Pradesh</span>
+                                <span class="state-data">18 villages, 6,800 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Jharkhand</span>
+                                <span class="state-data">14 villages, 5,100 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Rajasthan</span>
+                                <span class="state-data">10 villages, 4,200 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Maharashtra</span>
+                                <span class="state-data">8 villages, 3,800 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Chhattisgarh</span>
+                                <span class="state-data">4 villages, 2,100 beneficiaries</span>
+                            </div>
+                            <div class="map-stat-item">
+                                <span class="state-name">Uttarakhand</span>
+                                <span class="state-data">2 villages, 1,300 beneficiaries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section (Compact) -->
+        <section class="programs-section compact" id="programs">
+            <div class="container">
+                <div class="section-header compact">
+                    <h2>Our Programs</h2>
+                    <div class="header-underline"></div>
+                </div>
+                <div class="programs-grid compact">
+                    <a href="programs.html#healthcare" class="program-card-compact">
+                        <div class="program-icon healthcare-icon"></div>
+                        <div class="program-info">
+                            <h3>Rural Healthcare</h3>
+                            <p>Mobile medical units, health camps, and awareness programs</p>
+                        </div>
+                    </a>
+                    <a href="programs.html#education" class="program-card-compact">
+                        <div class="program-icon education-icon"></div>
+                        <div class="program-info">
+                            <h3>Education Support</h3>
+                            <p>Scholarships, remedial classes, school infrastructure</p>
+                        </div>
+                    </a>
+                    <a href="programs.html#women" class="program-card-compact">
+                        <div class="program-icon women-icon"></div>
+                        <div class="program-info">
+                            <h3>Women Empowerment</h3>
+                            <p>Self-help groups, vocational training, microfinance</p>
+                        </div>
+                    </a>
+                    <a href="programs.html#environment" class="program-card-compact">
+                        <div class="program-icon environment-icon"></div>
+                        <div class="program-info">
+                            <h3>Environment</h3>
+                            <p>Tree plantation, water conservation, sustainable farming</p>
+                        </div>
+                    </a>
+                    <a href="programs.html#youth" class="program-card-compact">
+                        <div class="program-icon youth-icon"></div>
+                        <div class="program-info">
+                            <h3>Youth Development</h3>
+                            <p>Leadership training, career guidance, skill building</p>
+                        </div>
+                    </a>
+                    <a href="programs.html#disaster" class="program-card-compact">
+                        <div class="program-icon disaster-icon"></div>
+                        <div class="program-info">
+                            <h3>Disaster Relief</h3>
+                            <p>Emergency response, relief distribution, rehabilitation</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-cta">
+                    <a href="programs.html" class="btn-primary">View All Programs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header compact">
+                    <h2>Voices from the Community</h2>
+                    <div class="header-underline"></div>
+                </div>
+                <div class="testimonials-slider" id="testimonials-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Jeevan Adhaar's health camp saved my father's life. They detected his diabetes early
+                                    and connected us with the government hospital for free treatment. We are forever
+                                    grateful."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                                    alt="Ramesh Kumar">
+                                <div class="author-info">
+                                    <span class="author-name">Ramesh Kumar</span>
+                                    <span class="author-location">Sultanpur, UP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The scholarship from Jeevan Adhaar allowed me to complete my B.Ed. Today I am a
+                                    teacher in a government school. This organization changes lives, I am proof of
+                                    that."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face"
+                                    alt="Sunita Devi">
+                                <div class="author-info">
+                                    <span class="author-name">Sunita Devi</span>
+                                    <span class="author-location">Jhansi, UP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Our women's self-help group now earns Rs. 15,000 per month through the pickle-making
+                                    unit set up by Jeevan Adhaar. 12 families have become self-reliant because of this
+                                    initiative."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face"
+                                    alt="Kamla Bai">
+                                <div class="author-info">
+                                    <span class="author-name">Kamla Bai</span>
+                                    <span class="author-location">Sagar, MP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"During the 2024 floods, Jeevan Adhaar was the first organization to reach our
+                                    village with food and medicine. They stayed for 3 weeks helping us rebuild. Real
+                                    heroes."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                                    alt="Mohammad Irfan">
+                                <div class="author-info">
+                                    <span class="author-name">Mohammad Irfan</span>
+                                    <span class="author-location">Darbhanga, Bihar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"My son was going to drop out of school to work. Jeevan Adhaar's education support
+                                    program not only kept him in school but he scored 89% in his board exams last year."
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                                    alt="Geeta Sharma">
+                                <div class="author-info">
+                                    <span class="author-name">Geeta Sharma</span>
+                                    <span class="author-location">Gorakhpur, UP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="testimonial-btn prev" id="testimonial-prev">&lt;</button>
+                        <button class="testimonial-btn next" id="testimonial-next">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events Section (Compact) -->
+        <section class="news-section compact" id="news">
+            <div class="container">
+                <div class="section-header compact">
+                    <h2>News & Events</h2>
+                    <div class="header-underline"></div>
+                </div>
+                <div class="news-grid compact">
+                    <div class="news-column">
+                        <h3 class="column-title">Latest News</h3>
+                        <div class="news-list">
+                            <a href="#" class="news-item compact">
+                                <span class="news-date">02 Jan 2026</span>
+                                <span class="news-title">MoU signed with State Health Department for expanded
+                                    coverage</span>
+                            </a>
+                            <a href="#" class="news-item compact">
+                                <span class="news-date">28 Dec 2025</span>
+                                <span class="news-title">Winter clothing distribution benefits 2,000 families in
+                                    UP</span>
+                            </a>
+                            <a href="#" class="news-item compact">
+                                <span class="news-date">15 Dec 2025</span>
+                                <span class="news-title">Computer lab inaugurated at Govt. School, Agra</span>
+                            </a>
+                            <a href="#" class="news-item compact">
+                                <span class="news-date">01 Dec 2025</span>
+                                <span class="news-title">World AIDS Day campaign reaches 15 colleges</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-column">
+                        <h3 class="column-title">Upcoming Events</h3>
+                        <div class="events-list compact">
+                            <a href="#" class="event-item compact">
+                                <div class="event-date-box compact">
+                                    <span class="event-day">15</span>
+                                    <span class="event-month">Jan</span>
+                                </div>
+                                <div class="event-details">
+                                    <span class="event-title">Blood Donation Camp - Kanpur</span>
+                                </div>
+                            </a>
+                            <a href="#" class="event-item compact">
+                                <div class="event-date-box compact">
+                                    <span class="event-day">26</span>
+                                    <span class="event-month">Jan</span>
+                                </div>
+                                <div class="event-details">
+                                    <span class="event-title">Republic Day Celebration - Lucknow</span>
+                                </div>
+                            </a>
+                            <a href="#" class="event-item compact">
+                                <div class="event-date-box compact">
+                                    <span class="event-day">08</span>
+                                    <span class="event-month">Feb</span>
+                                </div>
+                                <div class="event-details">
+                                    <span class="event-title">Health Awareness Marathon - Varanasi</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Registration Section -->
+        <section class="volunteer-section" id="volunteer">
+            <div class="container">
+                <div class="volunteer-grid">
+                    <div class="volunteer-info">
+                        <h2>Become a Volunteer</h2>
+                        <p>Join our network of 500+ volunteers making a difference across India. Whether you can spare a
+                            few hours or want to commit long-term, there's a place for you in our mission.</p>
+                        <ul class="volunteer-benefits">
+                            <li>Gain hands-on experience in community development</li>
+                            <li>Receive training and certification from experts</li>
+                            <li>Be part of a passionate team of changemakers</li>
+                            <li>Certificate of appreciation for 50+ hours of service</li>
+                        </ul>
+                    </div>
+                    <div class="volunteer-form-wrapper">
+                        <form class="volunteer-form" id="volunteer-form">
+                            <h3>Registration Form</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-name">Full Name *</label>
+                                    <input type="text" id="vol-name" name="name" required placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-phone">Phone Number *</label>
+                                    <input type="tel" id="vol-phone" name="phone" required
+                                        placeholder="+91 XXXXX XXXXX">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vol-email">Email Address *</label>
+                                    <input type="email" id="vol-email" name="email" required
+                                        placeholder="your@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vol-city">City/District *</label>
+                                    <input type="text" id="vol-city" name="city" required placeholder="Your city">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-interest">Area of Interest *</label>
+                                <select id="vol-interest" name="interest" required>
+                                    <option value="">Select an area</option>
+                                    <option value="healthcare">Healthcare & Medical Camps</option>
+                                    <option value="education">Education & Teaching</option>
+                                    <option value="women">Women Empowerment</option>
+                                    <option value="environment">Environment & Conservation</option>
+                                    <option value="disaster">Disaster Relief</option>
+                                    <option value="admin">Office & Administration</option>
+                                    <option value="tech">Technology & Digital</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-message">Why do you want to volunteer? (Optional)</label>
+                                <textarea id="vol-message" name="message" rows="3"
+                                    placeholder="Tell us about yourself..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary full-width">Submit Application</button>
+                            <p class="form-note">By submitting, you agree to be contacted by our volunteer coordinator.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section (Compact) -->
+        <section class="gallery-section compact" id="gallery">
+            <div class="container">
+                <div class="section-header compact">
+                    <h2>Photo Gallery</h2>
+                    <div class="header-underline"></div>
+                </div>
+                <div class="gallery-grid compact">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=300&h=200&fit=crop"
+                            alt="Health Camp">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=300&h=200&fit=crop"
+                            alt="Education">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=300&h=200&fit=crop"
+                            alt="Community">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=300&h=200&fit=crop"
+                            alt="Environment">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=300&h=200&fit=crop"
+                            alt="Women SHG">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=300&h=200&fit=crop"
+                            alt="Volunteers">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Links Section (Compact) -->
+        <section class="links-section compact">
+            <div class="container">
+                <div class="links-row">
+                    <a href="https://ngodarpan.gov.in" target="_blank" rel="noopener" class="link-item">NGO Darpan</a>
+                    <a href="https://india.gov.in" target="_blank" rel="noopener" class="link-item">India.gov.in</a>
+                    <a href="https://pmindia.gov.in" target="_blank" rel="noopener" class="link-item">PMO India</a>
+                    <a href="#" class="link-item">Annual Reports</a>
+                    <a href="#" class="link-item">Audit Reports</a>
+                    <a href="#" class="link-item">FCRA Returns</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid compact">
+                    <div class="footer-column">
+                        <h4>About Jeevan Adhaar</h4>
+                        <p>Registered non-profit organization (Reg. No: UP/2018/0012345) working for community welfare
+                            since 2018.</p>
+                        <p>FCRA: 123456789 | 12A: AAATJ1234A | 80G: AAATJ1234A</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="programs.html">Programs</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Policies</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <address>
+                            <p>45, Mahatma Gandhi Marg, Lucknow - 226001</p>
+                            <p>Phone: +91-522-2345678</p>
+                            <p>Email: contact@jeevanadhaar.org</p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright">Content Owned by Jeevan Adhaar Foundation. All Rights Reserved.</p>
+                <p class="last-updated">Last Updated: 06 January 2026 | Visitors: <span
+                        id="visitor-count">1,24,568</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
