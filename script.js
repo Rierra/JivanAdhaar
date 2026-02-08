@@ -1,5 +1,5 @@
 /* ============================================
-   Jeevan Adhaar - JavaScript Functionality
+   Jivan Adhaar - JavaScript Functionality
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,5 +1,5 @@
 /* ============================================
-   Jeevan Adhaar - NGO Website Styles
+   Jivan Adhaar - NGO Website Styles
    Government aesthetic with modern polish
    ============================================ */
 
@@ -117,6 +117,8 @@ body.high-contrast {
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-size: 15px;
 }
 
@@ -406,6 +408,7 @@ body.font-xlarge {
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
 }
 
 .carousel-slide {
@@ -931,6 +934,7 @@ body.dark-mode .map-outline {
     display: flex;
     gap: var(--space-md);
     transition: transform 0.5s ease;
+    touch-action: pan-y;
 }
 
 .testimonial-card {
